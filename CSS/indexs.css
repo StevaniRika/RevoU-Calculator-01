@@ -1,0 +1,111 @@
+/* CSS Reset */
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+/* Body*/
+body {
+  padding: 0 300px;
+  scroll-behavior: smooth;
+}
+/* title */
+.title {
+  margin-top: 20px;
+  text-align: center;
+}
+.subtitle {
+  margin: 10px 0px;
+  text-align: center;
+}
+/* header */
+.menu {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.menu > a {
+  text-decoration: none;
+}
+.menu-triangel {
+  background-color: blue;
+  color: white;
+  padding: 10px 0px;
+  width: 100%;
+  text-align: center;
+  border-radius: 4px;
+  margin: 10px;
+}
+.menu-parallelogram {
+  margin: 20px;
+
+}
+.judul {
+  text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 30px 0px;
+    width: 100%;
+    text-align: center;
+    border-radius: 0;
+}
+/* Main Content */
+main {
+  display: flex;
+    flex-direction: column;
+    gap: 60px;
+}
+/*Triangle*/
+.card {
+  border: 1px blue solid;
+    padding: 20px;
+    box-shadow: 0px 14px 5px -7px rgba(0,0,0,0.3);
+}
+.Rumus {
+  text-align: center;
+
+}
+.card > img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.form-hitung {
+  text-align: center;
+}
+.form-triangle {
+  display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.form-triangle > input{
+  padding: 4px 2px;
+    border-radius: 4px;
+    width: 100%;
+}
+.button-triangle {
+  padding: 10px 20px;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+.btn {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: end;
+  align-items: end;
+}
+.button-reset {
+  background-color: orange;
+  color: white;
+  padding: 10px 8px;
+  border: none;
+  border-radius: 10px;
+
+}
+ 

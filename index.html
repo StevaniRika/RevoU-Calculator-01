@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Comatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="CSS/indexs.css">
+    </head>
+    <body>
+        <!--Title-->
+       <h1 class="title">Welcome to Katik</h1>
+       <div class="subtitle">
+       <p> Hai Sobat, Selamat datang di katik :]</p>                              
+       <p>Sebuah web apps yang berfungsi untuk menghitung nilai luas dan keliling bangun datar.</p>
+       </div>
+       <!--Header/Navbar-->
+       <header >
+        <nav>
+            <div class="menu">
+                <a href="#triangel" class="menu-triangel">Segitiga</a>
+                <a href="#parallelogram" class="menu-parallelogram">Jajar Genjang</a>
+            </div>
+        </nav>
+       </header>
+       <!--Main Page-->
+       <main>
+<!--triangle-->
+        <section id="triangle">
+            <div class="judul">
+                <h2>Luas Segitiga</h2>
+            </div>
+         <div class="card">
+            <img src="assets/Segitiga.jpg">
+            <div>
+                <h4>Rumus Luas Segitiga yaitu :</h4>
+                <h6 class="Rumus">L = 1/2 x a x t</h6>
+            </div>
+            <div> 
+                <p>Dimana:</p>
+                <p>L = Luas</p>
+                <p>a = Panjang Alas</p>
+                <p>t = Tinggi</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="form-hitung">
+                <h1>Hitung Luas Segitiga</h1>
+                <form class="form-triangle" id="FormSegitiga">
+                    <input type="text" id="pedestal" placeholder="Panjang Alas">
+                    <input type="text" id="high" placeholder="Tinggi"> 
+                    <button class="button-triangle" onclick="calculate();">Hitung</button>
+                    <input type="text" id="result">
+                </form>
+            </div>
+            <br>
+         <div class="btn">
+            <button class="button-reset" onclick="hapus();">Reset</button>
+         </div>
+        </section>
+<!--triangle-->
+        <section id="triangle">
+            <div class="judul">
+                <h2>Keliling Segitiga</h2>
+            </div>
+         <div class="card">
+            <img src="assets/Segitiga.jpg">
+            <div>
+                <h4>Rumus Keliling Segitiga yaitu :</h4>
+                <h6 class="Rumus">K = S1 + S2 + S3</h6>
+            </div>
+            <div>
+                <p>Dimana:</p>
+                <P>K = Keliling</P>
+                <p>S1 = Sisi A</p>
+                <p>S2 = Sisi B</p>
+                <p>S3 = Sisi C</p>
+            </div>
+            <br>
+            <hr>
+            <br>
+            <div class="form-hitung">
+                <h1>Hitung Keliling Segitiga</h1>
+                <form class="form-triangle" id="KelilingSg">
+                    <input type="text" id="sideA" placeholder="Sisi A">
+                    <input type="text" id="sideB" placeholder="Sisi B"> 
+                    <input type="text" id="sideC" placeholder="Sisi C">
+                    <button class="button-triangle" onclick="Kelilingsegitiga();">Hitung</button>
+                    <input type="text" id="rsult">
+                </form> 
+            </div>
+            <br>
+         <div class="btn">
+            <button class="button-reset" onclick="hilang();">Reset</button>
+         </div>
+        </section>
+<!--JajarGenjang-->
+            <section id="parallelogram">
+                <div class="judul">
+                    <h2>Luas Jajar Genjang</h2>
+                </div>
+             <div class="card">
+                <img src="assets/JajarGenjang.jpg">
+                <div>
+                    <h4>Rumus Luas Jajar Genjang yaitu :</h4>
+                    <h6 class="Rumus">L = a x t </h6>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <P>L = Luas</P>
+                    <p>a = Alas</p>
+                    <p>t = Tinggi</p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="form-hitung">
+                    <h1>Hitung Luas Jajar Genjang</h1>
+                    <form class="form-triangle" id="formluasJG">
+                     <input type="text" id="alas" placeholder="Alas">
+                     <input type="text" id="tinggi" placeholder="Tinggi"> 
+                        <button class="button-triangle" onclick="luasJG();">Hitung</button>
+                        <input type="text" id="reslt">
+                    </form> 
+                </div>
+                <br>
+             <div class="btn">
+                <button  class="button-reset" 
+                onclick="cler();">Reset</button>
+             </div>
+            </section>
+<!--JajarGenjang-->
+            <section id="parallelogram">
+                <div class="judul">
+                    <h2>Keliling Jajar Genjang</h2>
+                </div>
+             <div class="card">
+                <img src="assets/JajarGenjang.jpg">
+                <div>
+                    <h4>Rumus Keliling Jajar Genjang yaitu :</h4>
+                    <h6 class="Rumus">K = 2a + 2b atau K = a + b + c + d</h6>
+                </div>
+                <div>
+                    <p>Dimana:</p>
+                    <P>K = Keliling</P>
+                    <p>a,b,c,d = Panjang masing-masing sisi</p>
+                    <p>a = c dan b = d</p>
+                </div>
+                <br>
+                <hr>
+                <br>
+                <div class="form-hitung">
+                    <h1>Hitung Keliling Jajar Genjang</h1>
+                    <form class="form-triangle" id="formkelilingJG">
+                        <input type="text" id="sidea" placeholder="Sisi a/c">
+                        <input type="text" id="sideb" placeholder="Sisi b/d"> 
+                        <button class="button-triangle" onclick="kelilingJG();">Hitung</button>
+                        <input type="text" id="hasil">
+                    </form> 
+                </div>
+                <br>
+             <div class="btn">
+                <button  class="button-reset" onclick="clr();"> Reset </button>
+             </div>
+            </section>
+             
+       </main>
+       <!--Footer--> 
+       <footer> <br>&copy  Stevani Rika Natalia Maloky</footer>
+       <script src="JS/indexs.js"></script>
+    </body>
+</html>
